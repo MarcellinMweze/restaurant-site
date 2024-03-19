@@ -12,6 +12,11 @@
         left:50%;
         top:40%;
         transform: translateX(-50%);
+
+        @media screen and (max-width:680px) {
+            height: 450px;
+        }
+
     }
 
     .quote-container{

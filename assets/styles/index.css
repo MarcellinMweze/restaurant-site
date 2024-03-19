@@ -513,6 +513,11 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+@media screen and (max-width: 680px) {
+  .section5::after {
+    height: 450px;
+  }
+}
 .section5 .quote-container {
   background: #eee;
   color: #21201e;
@@ -583,6 +588,11 @@ footer .footer-content .left-part {
   padding-right: 30px;
   line-height: 30px;
 }
+@media screen and (max-width: 680px) {
+  footer .footer-content .left-part {
+    display: none;
+  }
+}
 footer .footer-content .left-part h2 {
   font-family: Allura, serif;
   font-size: 2.5rem;
@@ -598,6 +608,12 @@ footer .footer-content .right-part {
   padding-left: 50px;
   display: grid;
   grid-template-rows: 1fr 1fr;
+}
+@media screen and (max-width: 680px) {
+  footer .footer-content .right-part {
+    margin-top: 35px;
+    padding-left: 20px;
+  }
 }
 footer .footer-content .right-part h3 {
   font-size: 0.85rem;
