@@ -1,0 +1,85 @@
+.section2{
+    margin: 70px 0 50px;
+    position: relative;
+    padding-bottom: 100px;
+
+    &::after{
+        content:"";
+        position: absolute;
+        height: 450px;
+        background: url('../img/bg-menu-01.jpg') center/cover;
+        width: 100%;
+        left: 0;
+        bottom:-20px;
+    }
+
+    h2{
+        font-family: $font3;
+        font-size: 2.2rem;
+        font-weight: 100;
+        color:$color1;
+    }
+
+    >img{
+        margin:30px 0;
+    }
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: 0 auto 30px;
+        font-family: $font1;
+        font-weight: 200;
+
+        li{
+            border-bottom: 1px solid $white;
+            padding-bottom:8px;
+        }
+    }
+
+    .meals{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+        margin: 0 auto;
+        padding:20px;
+        background: $white;
+        color: $black;
+        position: relative;
+        z-index: 1000;
+        border-top: 4px solid $color1;
+        column-gap: 20px;
+        max-width: 900px;
+        .meal{
+            display: grid;
+            grid-template-columns: 25% 60% 15%;
+            border-bottom: 1px dashed $color1;
+            align-items: center;
+            padding:20px 0;
+
+            img{
+                border-radius: 50%;
+            }
+
+            .meal-text{
+                h3{
+                text-align: left;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                }
+                p{
+                    text-align: left;
+                    margin-top:5px;
+                }
+                
+            }
+
+            > p{
+                color:$color1;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
