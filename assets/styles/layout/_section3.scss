@@ -1,13 +1,17 @@
 .section3{
     width:85%;
     margin:100px auto;
-    min-width: 1000px;
+    max-width: 1000px;
 
 
     .form-content{
         display: grid;
         grid-template-columns: 30% 70%;
         min-height: 450px;
+
+        @media screen and (max-width:940px) {
+            grid-template-columns: 1fr;
+        }
 
         .hours{
             background: black;
@@ -60,15 +64,24 @@
         .form-infos{
             background: $white;
             color:$black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             .form-infos-container{
-                margin:90px 0 40px;
 
+                @media screen and (max-width:680px) {
+                    width: 80%;
+                }
                 h2{
                     font-family: $font3;
                     color:$color1;
                     font-size: 2.3rem;
                     font-weight: 100;
+
+                    @media screen and (max-width:940px) {
+                        margin-top: 20px;
+                    }
                 }
 
                 h3{
@@ -80,15 +93,17 @@
                 img{
                     margin:30px 0 50px;
                     height: 25px;
+
                 }
 
                 .form-inputs{
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
-                    width: 80%;
-                    margin: 0 auto;
-                    gap:30px;
-                    margin-bottom: 50px;
+                    margin-bottom: 30px;
+
+                    @media screen and (max-width:680px) {
+                        grid-template-columns: 1fr;
+                    }
 
                     input, select{
                         height: 30px;
@@ -96,6 +111,7 @@
                         background: $white;
                         outline: none;
                         border-bottom: 1px solid $grey;
+                        margin: 10px;
 
                     }
 
@@ -111,6 +127,10 @@
                         border-radius: 50px;
                         cursor: pointer;
                         transition: 0.2s;
+
+                        @media screen and (max-width:940px) {
+                            margin-bottom: 35px;
+                        }
 
                         &:hover{
                             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.432);

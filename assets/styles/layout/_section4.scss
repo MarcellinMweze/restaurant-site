@@ -31,12 +31,21 @@
 
         .event-grid{
             display: grid;
-            grid-template-columns: 58% 42%;
+            grid-template-columns: 58% 39%;
             grid-template-rows: 1fr 1fr;
             grid-template-areas: 
             "a b"
             "c b";
             gap:20px;
+
+            @media screen and (max-width:680px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                grid-template-areas: 
+                "a"
+                "c"
+                "b";
+            }
 
             .event-left{
                 display: grid;
@@ -44,6 +53,10 @@
                 height: 200px;
                 align-items: center;
                 justify-content: center;
+
+                @media screen and (max-width:400px) {
+                    display: none;
+                }
 
                 .date{
                     width: 100%;
