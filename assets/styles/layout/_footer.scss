@@ -47,8 +47,17 @@ footer{
 
             @media screen and (max-width:680px) {
                 margin-top: 35px;
-                padding-left: 20px;
+                padding-left: 10px;
             }
+
+            @media screen and (max-width:430px) {
+                margin-top: -20px;
+            }
+
+            @media screen and (max-width:340px) {
+                margin-top: -50px;
+            }
+
 
 
             h3{
@@ -60,6 +69,10 @@ footer{
                 border: 1px solid rgba(166,114,68,0.155);
                 padding:7px 13px;
                 width: 250px;
+
+                @media screen and (max-width:430px) {
+                    width: 200px;
+                }
             }
 
             .follow-us{
@@ -74,6 +87,10 @@ footer{
                     color:#595956;
                     font-size: 0.8rem;
                     width: 200px;
+                    
+                    @media screen and (max-width:430px) {
+                        width: 180px;
+                    }
 
                     i{
                         transition: 0.2s;

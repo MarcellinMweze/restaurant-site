@@ -529,6 +529,11 @@ body {
   min-height: 300px;
   padding: 65px 70px;
 }
+@media screen and (max-width: 680px) {
+  .section5 .quote-container {
+    padding: 50px 30px;
+  }
+}
 .section5 .quote-container::before {
   content: "";
   position: absolute;
@@ -612,7 +617,17 @@ footer .footer-content .right-part {
 @media screen and (max-width: 680px) {
   footer .footer-content .right-part {
     margin-top: 35px;
-    padding-left: 20px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 430px) {
+  footer .footer-content .right-part {
+    margin-top: -20px;
+  }
+}
+@media screen and (max-width: 340px) {
+  footer .footer-content .right-part {
+    margin-top: -50px;
   }
 }
 footer .footer-content .right-part h3 {
@@ -624,6 +639,11 @@ footer .footer-content .right-part input {
   border: 1px solid rgba(166, 114, 68, 0.155);
   padding: 7px 13px;
   width: 250px;
+}
+@media screen and (max-width: 430px) {
+  footer .footer-content .right-part input {
+    width: 200px;
+  }
 }
 footer .footer-content .right-part .follow-us {
   display: -webkit-box;
@@ -645,6 +665,11 @@ footer .footer-content .right-part .follow-us ul {
   color: #595956;
   font-size: 0.8rem;
   width: 200px;
+}
+@media screen and (max-width: 430px) {
+  footer .footer-content .right-part .follow-us ul {
+    width: 180px;
+  }
 }
 footer .footer-content .right-part .follow-us ul i {
   -webkit-transition: 0.2s;
